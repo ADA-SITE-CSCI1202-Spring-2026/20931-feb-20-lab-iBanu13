@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class minMax_ABi {
+    public static miniMaxi(int[] arr){
+        int min = arr[0];
+        int max = arr[0];
+
+        for(int i=0; i<arr.length; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+
+        return new int[]{min, max};
+    }
+
+    
+    public static void main(String[] args) {
+        int[] test = new int[args.length];
+
+        for (int i = 0; i < args.length; i++) {
+            test[i] = Integer.parseInt(args[i]);
+        }
+
+        int[] ans = miniMaxi(test);
+        System.out.println("Minimum: " + ans[0]);
+        System.out.println("Maximum: " + ans[1]);
+    }
+}
