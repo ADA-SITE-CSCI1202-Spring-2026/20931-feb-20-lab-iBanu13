@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class minMax_ABi {
+public class minMax_C {
     public static miniMaxi(int[] arr){
         int min = arr[0];
         int max = arr[0];

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.*;
 
 public class minMax_ABi {
     public static mini(int[] arr){
